@@ -1,0 +1,13 @@
+{
+    "home": {
+        "name": " LUIS FELIPE ",
+        "type": {
+            "IAm": "Soy",
+            "1": "Desarrollador Web",
+            "2": "Ingeniero Electrónico."
+        }
+    },
+    "flags": {
+        "button": "Idioma"
+    }
+}

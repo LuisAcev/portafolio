@@ -1,0 +1,52 @@
+html, body, #root, #SwiperApp {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bullet Style */
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  line-height: 20px;
+  font-size: 20px;
+  background: rgb(33, 144, 163, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(241, 223, 56, 0.596);
+  color: #fff;
+  transform: scale(1.4); 
+  margin-bottom: 100px; /* Más espacio alrededor del bullet activo */
+}
+
+.swiper-pagination {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; /* Espacio uniforme entre bullets */
+  gap: 3rem;
+  margin-right: 5rem;
+}
+
+
