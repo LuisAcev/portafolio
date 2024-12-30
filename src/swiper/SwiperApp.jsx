@@ -11,14 +11,14 @@ import "./styles.css";
 // import required modules
 import { Mousewheel, Pagination } from "swiper/modules";
 import { Home } from "../template/home/Home";
-import { Skills } from "../template/skills/Skills";
 import { Projects } from "../template/projects/Projects";
-import { Contact } from "../template/contact/Contact";
 import tippy from "tippy.js";
-import "tippy.js/dist/tippy.css";
 import { pages } from "../assets/pages";
 import AppAppBar from "../template/home/components/AppAppBar";
-import { Divider } from "@mui/material";
+import { TemplatePorta } from "../template/components/TemplatePorta";
+import { Skills } from "../template/skills/Skills";
+import { Contact } from "../template/contact/Contact";
+import "tippy.js/dist/tippy.css";
 
 export default function SwiperApp() {
   return (
@@ -49,13 +49,13 @@ export default function SwiperApp() {
           <Home />
         </SwiperSlide>
         <SwiperSlide>
-          <Skills />
+          <TemplatePorta component={<Skills />} componenteName="skills" />
         </SwiperSlide>
         <SwiperSlide>
-          <Projects />
+          <TemplatePorta component={<Projects />} componenteName="projects" />
         </SwiperSlide>
         <SwiperSlide>
-          <Contact />
+          <TemplatePorta component={<Contact />} componenteName="contact" />
         </SwiperSlide>
       </Swiper>
     </>

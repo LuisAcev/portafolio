@@ -9,5 +9,16 @@
     },
     "flags": {
         "button": "Idioma"
+    },
+    "pages": {
+        "home": "Principal",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "card": {
+        "repository": "Repositorio",
+        "link": "Sitio Web",
+        "details":"Detalles"
     }
 }

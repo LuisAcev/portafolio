@@ -1,12 +1,14 @@
-import { Box } from '@mui/system';
-import React from 'react';
 
-export const Skills =(props)=> {
-    return (
-        <Box
-        sx={{backgroundColor:"red"}}>
-            todo bien con los skills 
-        </Box>
-    );
-}
+import { Grid2 } from "@mui/material";
+import { logosCardArray } from "../../assets/logos";
+import { LogosCard } from "./cards/LogosCard";
 
+export const Skills = () => {
+  return (
+    <Grid2 container rowSpacing={10} columnSpacing={{ xs: 1, sm: 2, md: 40 }} sx={{margin:"0 0 0 8rem"}}>
+      {logosCardArray.map((item, index) => (
+        <LogosCard key={index} img={item.img} alt={item.alt} text={item.text} />
+      ))}
+    </Grid2>
+  );
+};

@@ -1,12 +1,5 @@
-import { Box } from '@mui/system';
-import React from 'react';
+import { Box } from "@mui/system";
 
-export const Contact =(props)=> {
-    return (
-        <Box
-        sx={{backgroundColor:"red"}}>
-            todo bien con los  
-        </Box>
-    );
-}
-
+export const Contact = () => {
+  return <Box sx={{ backgroundColor: "red" }}>todo bien con los</Box>;
+};
