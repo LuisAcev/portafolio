@@ -35,7 +35,7 @@ export const TemplatePorta = ({ component, componenteName }) => {
             transform: "rotate(270deg)",
           }}
         >
-          {t(`pages.${componenteName}`)}
+          {t(`pagestemplate.${componenteName}`)}
         </Typography>
         <img
           src={"/assets/4.jpg"} // imagen de fondo

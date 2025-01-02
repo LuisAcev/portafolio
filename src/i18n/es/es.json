@@ -18,6 +18,12 @@
         "projects": "Proyectos / Projects",
         "contact": "Contacto / Contact"
     },
+    "pagestemplate": {
+        "home": "Principal",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
     "card": {
         "repository": "Repositorio",
         "link": "Sitio Web",
