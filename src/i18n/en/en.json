@@ -1,183 +1,46 @@
 {
-    "header": "TRADE ANALIZER",
-    "alert": {
-        "cretedUser": "User created successfully",
-        "emailExist": "The email is already exist.",
-        "useraccess": "Authorized Access.",
-        "useraccessdenied": "User does not Exist.",
-        "userUpdate": "The user has been Updated",
-        "userDelete": "The user has been Deleted",
-        "loading": "Loading..."
-    },
-    "error": {
-        "button": "Return Home"
-    },
-    "colorMode": {
-        "dark": "Dark",
-        "light": "Light"
-    },
-    "menucontent": {
-        "account": "Account",
-        "calculator": "Calculator",
-        "charts": "Charts",
-        "economic-calendar": "Economic Calendar",
-        "home": "Home",
-        "trading_ideas": "Trading Ideas",
-        "settings": "Settings"
-    },
-    "login": {
-        "account": "Account",
-        "settings": "Settings",
-        "log_out": "Logout",
-        "sign_up": "Sign Up",
-        "sign_in": "Sign in"
-    },
-    "draw": {
-        "arrow": "Arrow",
-        "circle": "Circle",
-        "rectangle": "Rectangle",
-        "line": "Line",
-        "text": "Text",
-        "delete": "delete",
-        "color": "Color | double click"
-    },
-    "search": "Search...",
-    "timeFrames": {
-        "1m": "1M",
-        "1w": "1W",
-        "1d": "1D",
-        "1month": "1 Month",
-        "1week": "1 Week",
-        "1day": "Daily"
-    },
-    "charType": {
-        "candle": "Candle",
-        "bar": "Bar",
-        "line": "Line",
-        "area": "Area"
-    },
-    "economicCalendar": {
-        "date": "Date",
-        "event": "Event",
-        "actual": "Actual",
-        "forecast": "Forecast",
-        "frevious": "Previous",
-        "impact": "Impact"
-    },
-    "calculator": {
-        "calculator": "Calculator",
-        "depositCurrency": "DEPOSIT CURRENCY",
-        "currency": "INSTRUMENT",
-        "pip": "Pips",
-        "pipSize": "1 Pip Size",
-        "calculate": "CALCULATE",
-        "price": "Precio",
-        "lotes": "Lots (trade size)",
-        "instrument": {
-            "eur": "European Union",
-            "usd": "United States Dollar"
-        }
-    },
-    "account": {
-        "fullName": "Full name",
-        "email": "Email",
-        "password": "Password",
-        "phoneNumber": "Cellphone",
-        "country": "Country",
-        "avatar": "Avatar",
-        "edit": "Edit",
-        "update": {
-            "button": "Update",
-            "buttonText": "Are you sure to Update this account?",
-            "agree": "Agree",
-            "disagree": "Disagree"
-        },
-        "delete": {
-            "button": "Delete",
-            "buttonText": "Are you sure to Delete this account?",
-            "agree": "Agree",
-            "disagree": "Disagree"
-        }
-    },
-    "signIn": {
-        "signIn": "Sign In",
-        "email": "Email",
-        "password": "Password",
-        "forgotPass": "Forgot your password?",
-        "or": "or",
-        "singInGoogle": "Sign in with Google",
-        "haveAccount": "Don't have an account?  ",
-        "singUp": " Sign Up",
-        "signInLogged": "Come In"
-    },
-    "signUp": {
-        "signUp": "Sign Up",
-        "fullName": " Full name",
-        "email": "email",
-        "password": "password",
-        "or": "or",
-        "singUpGoogle": "Sign in with Google",
-        "alreadyHaveAccount": "Already have an account?  ",
-        "singIn": " Sign In"
-    },
     "home": {
-        "text": "Analyze the assets with the greatest potential in the financial markets, invest like a professional in a quick and convenient way, just as Trade Analyzer can offer. It's as easy as signing up and starting your analysis. What are you waiting for?",
-        "proFeatures": "Features",
-        "disclaimer": "Disclaimer.",
-        "terms": {
-            "terms": "Terms and conditions.",
-            "legend": "Trading is an activity that involves a high level of risk, and you could lose more than what you invested."
+        "name": "LUIS FELIPE",
+        "type": {
+            "IAm": "I`m",
+            "1": "Web Developer and Electronic Engineer.",
+            "2": "Electronic Engineer"
         },
-        "features": {
-            "product": {
-                "product": "Product Features",
-                "legend": " TRADE ANALYZER is a software designed with modern technology, its FrontEnd implements libraries such as React, React Hook Forms, Redux Toolkit, endpoint creation with RTK Query, Material UI user interface components, among others. The Backend is developed with Node.js and Express, which manages a RESTful API. Security is implemented through JSON Web Tokens (JWT) and connects to a non-relational database in MongoDB using Mongoose, which stores and processes market and user information."
-            },
-            "items": {
-                "dashboard": "Analyze the assets of your choice, manage your users, calculate the exact lot size per operation, among other features.",
-                "mobil": "Analyze the assets of your choice, manage your users, calculate the exact lot size per operation, among other features."
-            }
-        }
+        "cv": "Download CV"
     },
-    "signUpShema": {
-        "fullname": {
-            "required": "Full name is a required field.",
-            "matches": "Name can only contain letters."
-        },
-        "email": {
-            "required": "Email is a required field.",
-            "email": "Email format is not valid."
-        },
-        "password": {
-            "required": "Password is a required field.",
-            "min": "Password is too short - should be 6 chars minimum.",
-            "matches": "Password must contain letters, numbers and symbols."
-        }
+    "flags": {
+        "button": "Language",
+        "email": "lfacevedo2@gmail.com / "
     },
-    "signInShema": {
-        "email": {
-            "required": "Email is a required field.",
-            "email": "Email format is not valid."
-        },
-        "password": {
-            "required": "Password is a required field.",
-            "min": "Password is too short - should be 6 chars minimum.",
-            "matches": "Password must contain letters, numbers and symbols."
-        }
+    "pages": {
+        "home": "Principal / Home",
+        "skills": "Habilidades / Skills",
+        "projects": "Proyectos / Projects",
+        "contact": "Contacto / Contact"
     },
-    "accountShema": {
-        "fullname": {
-            "required": "Full name is a required field.",
-            "matches": "Name can only contain letters."
-        },
-        "email": {
-            "required": "Email is a required field.",
-            "email": "Email format is not valid."
-        },
-        "password": {
-            "required": "Password is a required field.",
-            "min": "Password is too short - should be 6 chars minimum.",
-            "matches": "Password must contain letters, numbers and symbols."
+    "card": {
+        "repository": "Repository",
+        "link": "Website",
+        "details": "Details"
+    },
+    "projects": {
+        "tradeanalyzer": "A project to analyze trading strategies.",
+        "journal": "A project to manage time and activities by priorities.",
+        "dashboard": "Responsive Web Dashboard.",
+        "api": "RESTful API to retrieve market data of stocks, currencies, crypto assets from various endpoints.",
+        "portafolio": "Get to know my projects, repository or contact me.",
+        "crud": "CRUD (Create, Read, Update, and Delete) consuming the API https://gorest.co.in/",
+        "technologies": "Technologies"
+    },
+    "contact": {
+        "fullname": "Full Name",
+        "email": "Your Email Address",
+        "message": "Leave me a Message",
+        "submit": "Submit",
+        "fethcMsg": {
+            "success": "Message sent successfully: ",
+            "error": "Error sending message",
+            "errorsubmit": "Error making the request: "
         }
     }
 }

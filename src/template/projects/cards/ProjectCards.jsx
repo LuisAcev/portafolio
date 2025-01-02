@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Box, Button, Link, Typography } from "@mui/material";
 
-export const ProjectCards = ({ img, text, title, link, repository }) => {
+export const ProjectCards = ({
+  img,
+  text,
+  title,
+  link,
+  repository,
+  technologies,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
   const handleDetails = () => {
@@ -87,8 +94,10 @@ export const ProjectCards = ({ img, text, title, link, repository }) => {
                   margin: "1.5rem 0 9.1rem 0.5rem",
                 }}
               >
-                {`Landing page: ${text}`}
-                {`Tecnologias: React, Material Ui, Redux Tool kit, RTK,React Dom`}
+                {`Landing page: ${t(`projects.${text}`)}`}
+                <br />
+                <br />
+                {`${t(`projects.technologies`)}: ${technologies}`}
               </Typography>
             </Box>
           ) : null}

@@ -13,7 +13,7 @@ export const LogosCard = ({ img, alt, text }) => {
         padding: " 0 0 0 0",
         width: 180,
         height: 180,
-        transform: "scale(1.1)",
+        transform: "scale(1.2)",
       }}
     >
       <motion.div

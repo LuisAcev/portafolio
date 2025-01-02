@@ -8,8 +8,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { LanguageFlag } from "./LanguageFlags";
 import { dataLenguage } from "../../../assets/lenguageDb.js";
-import { useTranslation } from "react-i18next";
 import SocialMedias from "./SocialMedias.jsx";
+import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function AppAppBar() {
   const { t } = useTranslation();
@@ -32,8 +33,7 @@ export default function AppAppBar() {
         height: "5rem",
         padding: "0.8rem 0 0 0",
         boxShadow: "inset 0 0 30rem hsla(210, 53.40%, 28.60%, 0.90)",
-        borderBottom:"0.16rem solid rgba(111, 176, 202, 0.71)"
-
+        borderBottom: "0.16rem solid rgba(111, 176, 202, 0.71)",
       }}
     >
       <Container maxWidth="lg">
@@ -45,6 +45,16 @@ export default function AppAppBar() {
             justifyContent: "flex-end",
           }}
         >
+          <Typography
+            sx={{
+              fontSize: "16pt",
+              fontFamily: "Segoe UI ",
+              margin: "0 1.5vh 0 0",
+            }}
+          >
+            {t("flags.email")}
+          </Typography>
+
           <SocialMedias />
           <LanguageFlag data={dataLenguage} />
         </Box>
@@ -87,6 +97,5 @@ export default function AppAppBar() {
         </Box>
       </Container>
     </AppBar>
-    
   );
 }

@@ -3,22 +3,44 @@
         "name": " LUIS FELIPE ",
         "type": {
             "IAm": "Soy",
-            "1": "Desarrollador Web",
+            "1": "Desarrollador Web E Ingeniero Electrónico.",
             "2": "Ingeniero Electrónico."
-        }
+        },
+        "cv": "Descargar CV"
     },
     "flags": {
-        "button": "Idioma"
+        "button": "Idioma",
+        "email": "lfacevedo2@gmail.com / "
     },
     "pages": {
-        "home": "Principal",
-        "skills": "Habilidades",
-        "projects": "Proyectos",
-        "contact": "Contacto"
+        "home": "Principal / Home",
+        "skills": "Habilidades / Skills",
+        "projects": "Proyectos / Projects",
+        "contact": "Contacto / Contact"
     },
     "card": {
         "repository": "Repositorio",
         "link": "Sitio Web",
-        "details":"Detalles"
+        "details": "Detalles"
+    },
+    "projects": {
+        "tradeanalyzer": "Un proyecto para analizar estrategias de trading.",
+        "journal": "Un proyecto para gestionar tiempos y actividades por prioridades.",
+        "dashboard": "Web DashBoard Responsive.",
+        "api": "RESTful API para Obtener datos de mercado de acciones, divisas, crypto Activos, desde diversos EndPoints.",
+        "portafolio": "Ten la oportunidad de conocer mis proyectos, repositorio o contáctarme.",
+        "crud": "CRUD (Create, Read , Update  and Delete) consumiendo la Api https://gorest.co.in/",
+        "technologies": "Tecnologías"
+    },
+    "contact": {
+        "fullname": "Nombre Completo",
+        "email": "Tu Correo Electrónico",
+        "message": "Déjame un Mensaje",
+        "submit": "Enviar",
+        "fethcMsg": {
+            "success": "Mensaje enviado con éxito : ",
+            "error": "Error al enviar el mensaje",
+            "errorsubmit": "Error al hacer la solicitud : "
+        }
     }
 }

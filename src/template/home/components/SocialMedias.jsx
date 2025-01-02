@@ -23,6 +23,10 @@ export default function SocialMedias() {
           border:" 0.3rem solid hsla(211, 77.50%, 15.70%, 0.80)", 
           width: 55,
           height: 55,
+          transition: "background-color 0.3s", // Animación suave
+            "&:hover": {
+             backgroundColor: "hsla(187, 91.40%, 41.20%, 0.70)",
+            },
         }}
       >
         <FacebookIcon />
@@ -40,6 +44,10 @@ export default function SocialMedias() {
           border:" 0.3rem solid hsla(211, 77.50%, 15.70%, 0.80)", 
           width: 54,
           height: 54,
+          transition: "background-color 0.3s", // Animación suave
+            "&:hover": {
+              backgroundColor: "hsla(187, 91.40%, 41.20%, 0.70)",
+            },
         }}
       >
         <LinkedInIcon />

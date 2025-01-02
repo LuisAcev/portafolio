@@ -1,5 +1,4 @@
-import { Avatar, Box, CssBaseline, Typography } from "@mui/material";
-import AppTheme from "./components/AppTheme";
+import { Avatar, Box, Button, CssBaseline, Typography } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import { Model } from "./3DModel/Model";
 import { useTranslation } from "react-i18next";
@@ -9,14 +8,12 @@ export const Home = () => {
   return (
     <Box
       sx={{
-        height: "100%",
+        height: "100vh",
         width: "100%",
         boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
-        background: "#141E30" /* fallback for old browsers */,
         background:
-          "-webkit-linear-gradient(to left, #243B55, #141E30)" /* Chrome 10-25, Safari 5.1-6 */,
-        background:
-          "linear-gradient(to left, #243B55, #141E30)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+          "url(assets/3.jpg) no-repeat top center, linear-gradient(to left, #243B55, #141E30) no-repeat bottom center",
+        backgroundSize: "100% 68%, 100% 50%",
       }}
     >
       <CssBaseline enableColorScheme />
@@ -26,6 +23,29 @@ export const Home = () => {
           flexDirection: "row",
         }}
       >
+        <Button
+          href={
+            t("home.cv") == "Descargar CV"
+              ? "https://drive.google.com/file/d/1Gl3E6h8x7mffFUPxSu7HOcTHwzA3OkfA/view?usp=sharing"
+              : "https://drive.google.com/file/d/1VPJ2NqHJyABuM1bY72JJsDCozhV1oIG7/view?usp=sharing"
+          }
+          sx={{
+            backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
+            border: "0.2rem solid rgba(104, 126, 136, 0.9)",
+            borderRadius: "1.5rem",
+            color: "rgba(255, 255, 255, 0.9)",
+            margin: "82vh 0 0 90vh",
+            position: "absolute",
+            width: "22vh",
+            zIndex: 2,
+            transition: "background-color 0.3s", // Animación suave
+            "&:hover": {
+              backgroundColor: "hsla(187, 90.30%, 51.40%, 0.8)",
+            },
+          }}
+        >
+          {t("home.cv")}
+        </Button>
         <Box
           sx={{
             backgroundColor: "hsla(210, 55.70%, 45.10%, 0.3)",
@@ -34,7 +54,7 @@ export const Home = () => {
             height: "85vh",
             margin: " 6.5rem 0 0 3rem",
             width: "85vh",
-            zIndex: 2,
+            zIndex: 1,
           }}
         >
           <Box
@@ -53,7 +73,7 @@ export const Home = () => {
         <Box sx={{ justifyContent: "flex-end", margin: "10rem 0 0 9rem" }}>
           <Avatar
             alt="picture"
-            src="/static/images/avatar/1.jpg"
+            src="assets/projectPictures/avatar.jpg"
             sx={{
               width: 300,
               height: 300,
@@ -63,7 +83,7 @@ export const Home = () => {
           />
           <Typography
             sx={{
-              color:"rgba(241, 234, 234, 0.86)",
+              color: "rgba(241, 234, 234, 0.86)",
               fontWeight: "bold",
               fontSize: 75,
               marginBottom: "2rem",
@@ -90,14 +110,14 @@ export const Home = () => {
             <div
               style={{
                 color: "hsl(192, 33.30%, 97.10%)",
-                marginRight: "0.5rem",
+                marginRight: "1rem",
               }}
             >
               {t("home.type.IAm")}
             </div>
             <Typewriter
               options={{
-                strings: [`${t("home.type.1")} E ${t("home.type.2")}`],
+                strings: [`${t("home.type.1")}`],
                 autoStart: true,
                 loop: true,
               }}

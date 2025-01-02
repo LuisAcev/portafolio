@@ -13,6 +13,7 @@ export const Projects = () => {
           text={item.text}
           link={item.link}
           repository={item.repository}
+          technologies={item.technologies}
         />
       ))}
     </Grid2>

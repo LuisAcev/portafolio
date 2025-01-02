@@ -55,6 +55,10 @@ export function LanguageFlag({ data = [], sx, ...other }) {
           margin: "0 0 0 0.5rem",
           width: 54,
           height: 54,
+          transition: "background-color 0.3s", // Animación suave
+            "&:hover": {
+              backgroundColor: "hsla(187, 91.40%, 41.20%, 0.70)",
+            },
           ...(openPopover && { bgcolor: "action.selected" }),
           ...sx,
         }}

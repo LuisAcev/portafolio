@@ -10,14 +10,19 @@ export const logosCardArray = [
     text: "Redux",
   },
   {
+    img: "assets/logos/javascript.svg",
+    alt: "javascript",
+    text: "javaScript",
+  },
+  {
     img: "assets/logos/nodejs.svg",
     alt: "NodeJs",
     text: "NodeJs",
   },
   {
-    img: "assets/logos/javascript.svg",
-    alt: "javascript",
-    text: "javaScript",
+    img: "assets/logos/express.svg",
+    alt: "express",
+    text: "Express",
   },
   {
     img: "assets/logos/rxjs.svg",
@@ -25,11 +30,6 @@ export const logosCardArray = [
     text: "Rxjs",
   },
 
-  {
-    img: "assets/logos/express.svg",
-    alt: "express",
-    text: "Express",
-  },
   {
     img: "assets/logos/git.svg",
     alt: "git",

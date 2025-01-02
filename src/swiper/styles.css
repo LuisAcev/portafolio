@@ -35,7 +35,7 @@ html, body, #root, #SwiperApp {
 }
 
 .swiper-pagination-bullet-active {
-  background: rgba(241, 223, 56, 0.596);
+  background: rgba(241, 150, 13, 0.6);
   color: #fff;
   transform: scale(1.4); 
   margin-bottom: 100px; /* Más espacio alrededor del bullet activo */
@@ -48,5 +48,34 @@ html, body, #root, #SwiperApp {
   gap: 3rem;
   margin-right: 5rem;
 }
+
+
+@media screen and (max-width: 500px) {
+  .swiper-pagination-bullet {
+    display: none;
+  }
+  
+  .swiper-pagination-bullet-active {
+    display: none;
+  }
+  
+  .swiper-pagination {
+    display: none;
+  }
+  
+}
+
+/* tippy */
+.tippy-box[data-theme~='custom'] {
+  background-color: hsla(210, 55.70%, 45.10%, 0.4); 
+  color: white; 
+  font-size: 18px; 
+  border-radius: 0.5rem; 
+}
+
+.tippy-arrow {
+  color: hsl(210, 85%, 21%); 
+}
+
 
 
