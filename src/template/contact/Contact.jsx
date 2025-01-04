@@ -146,7 +146,7 @@ export const Contact = () => {
                   color: "hsla(0, 0.00%, 100.00%, 0.8)",
                   height: "auto",
                   paddingBottom: {
-                    xs: "100px",
+                    xs: "70px",
                     sm: "80px",
                     md: "80px",
                     lg: "70px",

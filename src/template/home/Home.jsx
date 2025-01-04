@@ -85,7 +85,7 @@ export const Home = () => {
               lg: "flex-end",
             },
             margin: {
-              xs: "6.5rem 0 0 -5rem",
+              xs: "7rem 0 0 -5rem",
               sm: "6rem 0 0 -4rem",
               md: "10rem 0 0 -4rem",
               lg: "10rem 0 0 13rem",

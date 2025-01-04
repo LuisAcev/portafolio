@@ -37,7 +37,7 @@ export default function AppAppBar({ handleButtonClick }) {
         >
           <Typography
             sx={{
-              fontSize: { xs: 14, sm: 20, md: 20, lg: 20 },
+              fontSize: { xs: 15, sm: 20, md: 20, lg: 20 },
               fontFamily: "Segoe UI ",
               margin: "0 0 0 0",
             }}
