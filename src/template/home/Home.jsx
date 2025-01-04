@@ -124,11 +124,13 @@ export const Home = () => {
           <div className="typer">
             <div
               style={{
+                position:"absolute",
                 color: "hsl(192, 33.30%, 97.10%)",
                 marginRight: "1rem",
+                maxWidth:"20%"
               }}
             >
-              {t("home.type.IAm")}
+              {t(`home.type.IAm`)}
             </div>
             <Typewriter
               options={{
