@@ -11,8 +11,8 @@ export const LogosCard = ({ img, alt, text }) => {
         alignSelf: "center",
         backgroundColor: "transparent",
         padding: " 0 0 0 0",
-        width: { xs: 120, md: 180, lg: 180 },
-        height: { md: 180, lg: 180 },
+        width: { xs: 110, md: 180, lg: 180 },
+        height: { md: 170, lg: 180 },
         transform: { xs: "scale(1.1)", md: "scale(1.2)", lg: "scale(1.2)" },
       }}
     >

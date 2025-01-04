@@ -85,7 +85,7 @@ export const Home = () => {
               lg: "flex-end",
             },
             margin: {
-              xs: "8rem 0 0 -5rem",
+              xs: "6.5rem 0 0 -5rem",
               sm: "6rem 0 0 -4rem",
               md: "10rem 0 0 -4rem",
               lg: "10rem 0 0 13rem",
@@ -154,7 +154,7 @@ export const Home = () => {
               borderRadius: "1.5rem",
               color: "rgba(255, 255, 255, 0.9)",
               margin: {
-                xs: "-29vh 0 0 0",
+                xs: "-31vh 0 0 0",
                 sm: "10vh 0 0 0",
                 md: "18vh 0 0 0",
                 lg: "0 0 0 0",
