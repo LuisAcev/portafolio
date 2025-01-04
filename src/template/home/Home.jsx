@@ -124,10 +124,9 @@ export const Home = () => {
           <div className="typer">
             <div
               style={{
-                position:"absolute",
                 color: "hsl(192, 33.30%, 97.10%)",
                 marginRight: "1rem",
-                maxWidth:"20%"
+                maxWidth: "20%",
               }}
             >
               {t(`home.type.IAm`)}
@@ -142,37 +141,37 @@ export const Home = () => {
           </div>
         </Box>
       </Box>
-              {/* /// Button CV /// */}
-              <Box>
-          <Button
-            href={
-              t("home.cv") == "Descargar CV"
-                ? "https://drive.google.com/file/d/1Gl3E6h8x7mffFUPxSu7HOcTHwzA3OkfA/view?usp=sharing"
-                : "https://drive.google.com/file/d/1VPJ2NqHJyABuM1bY72JJsDCozhV1oIG7/view?usp=sharing"
-            }
-            sx={{
-              backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
-              border: "0.2rem solid rgba(104, 126, 136, 0.9)",
-              borderRadius: "1.5rem",
-              color: "rgba(255, 255, 255, 0.9)",
-              margin: {
-                xs: "-31vh 0 0 0",
-                sm: "10vh 0 0 0",
-                md: "18vh 0 0 0",
-                lg: "0 0 0 0",
-              },
-              
-              width: "22vh",
-              zIndex: 2,
-              transition: "background-color 0.3s", // Animación suave
-              "&:hover": {
-                backgroundColor: "hsla(187, 90.30%, 51.40%, 0.8)",
-              },
-            }}
-          >
-            {t("home.cv")}
-          </Button>
-        </Box>
+      {/* /// Button CV /// */}
+      <Box>
+        <Button
+          href={
+            t("home.cv") == "Descargar CV"
+              ? "https://drive.google.com/file/d/1Gl3E6h8x7mffFUPxSu7HOcTHwzA3OkfA/view?usp=sharing"
+              : "https://drive.google.com/file/d/1VPJ2NqHJyABuM1bY72JJsDCozhV1oIG7/view?usp=sharing"
+          }
+          sx={{
+            backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
+            border: "0.2rem solid rgba(104, 126, 136, 0.9)",
+            borderRadius: "1.5rem",
+            color: "rgba(255, 255, 255, 0.9)",
+            margin: {
+              xs: "-31vh 0 0 0",
+              sm: "10vh 0 0 0",
+              md: "18vh 0 0 0",
+              lg: "0 0 0 0",
+            },
+
+            width: "22vh",
+            zIndex: 2,
+            transition: "background-color 0.3s", // Animación suave
+            "&:hover": {
+              backgroundColor: "hsla(187, 90.30%, 51.40%, 0.8)",
+            },
+          }}
+        >
+          {t("home.cv")}
+        </Button>
+      </Box>
     </Box>
   );
 };
