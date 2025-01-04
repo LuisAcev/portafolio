@@ -126,7 +126,6 @@ export const Home = () => {
               style={{
                 color: "hsl(192, 33.30%, 97.10%)",
                 marginRight: "1rem",
-                maxWidth: "20%",
               }}
             >
               {t(`home.type.IAm`)}
