@@ -15,14 +15,14 @@ export const logosCardArray = [
     text: "javaScript",
   },
   {
-    img: "assets/logos/nodejs.svg",
-    alt: "NodeJs",
-    text: "NodeJs",
-  },
-  {
     img: "assets/logos/express.svg",
     alt: "express",
     text: "Express",
+  },
+  {
+    img: "assets/logos/nodejs.svg",
+    alt: "NodeJs",
+    text: "NodeJs",
   },
   {
     img: "assets/logos/rxjs.svg",
@@ -36,13 +36,13 @@ export const logosCardArray = [
     text: "Git",
   },
   {
-    img: "assets/logos/graphql.svg",
-    alt: "graphql",
-    text: "Graphql",
-  },
-  {
     img: "assets/logos/python.svg",
     alt: "python",
     text: "Python",
+  },
+  {
+    img: "assets/logos/graphql.svg",
+    alt: "graphql",
+    text: "Graphql",
   },
 ];

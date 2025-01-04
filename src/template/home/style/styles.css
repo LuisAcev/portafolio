@@ -1,0 +1,46 @@
+.typer {
+    color: hsla(187, 90.30%, 51.40%, 0.76);
+    display: flex;
+    font-size: 6vh;
+    font-weight: bold;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 10rem;
+}
+
+@media screen and (max-width: 470px) {
+    .typer {
+        position: absolute;
+        font-size: 3.5vh !important;
+        margin: 14vh 0 0 9vh;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .typer {
+        position: absolute;
+        font-size: 3vh;
+        margin: 12vh 0 0 9vh;
+        font-size: 3.5vh !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .typer {
+        font-size: 4vh;
+        margin: 12vh 0 0 10vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .typer {
+        margin: 16vh 0 0 -46vh;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .typer {
+        margin: 16vh 0 0 2vh;
+        font-size: 4vh !important;
+    }
+}

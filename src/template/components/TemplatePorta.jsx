@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useTranslation } from "react-i18next";
-
+import "./style.css";
 export const TemplatePorta = ({ component, componenteName }) => {
   const { t } = useTranslation();
   return (
@@ -15,7 +15,7 @@ export const TemplatePorta = ({ component, componenteName }) => {
           "linear-gradient(to left, #243B55, #141E30)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
         boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
         flexDirection: "row",
-        height: "100%",
+        height: { xs: "100%", md: "100vh", lg: "100vh" },
         width: "100%",
       }}
     >
@@ -29,9 +29,9 @@ export const TemplatePorta = ({ component, componenteName }) => {
         <Typography
           sx={{
             color: "hsla(211, 17.40%, 51.60%, 0.80)",
-            fontSize: 90,
+            fontSize: { xs: 30, sm: 55, md: 90, lg: 90 },
             fontWeight: "bold",
-            marginTop: "28rem",
+            margin: { xs: "34rem 0 0 0", md: "26rem 0 0 0", lg: "27rem 0 0 0" },
             transform: "rotate(270deg)",
           }}
         >
@@ -39,15 +39,10 @@ export const TemplatePorta = ({ component, componenteName }) => {
         </Typography>
         <img
           src={"/assets/4.jpg"} // imagen de fondo
-          style={{
-            borderTop: "0.16rem solid rgba(111, 176, 202, 0.71)",
-            width: "100%",
-            height: "28%",
-            marginTop: "5rem",
-          }}
+          className="hidden-mobile"
         />
       </Box>
-      <Box sx={{ width: "100%", margin: "7rem 0 0 2rem" }}>{component}</Box>
+      <Box sx={{ margin: "0 0 0 2rem", width: "100%" }}>{component}</Box>
     </Box>
   );
 };

@@ -1,8 +1,8 @@
-import { Avatar, Box, Button, CssBaseline, Typography } from "@mui/material";
+import { Avatar, Box, Button, Typography } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import { Model } from "./3DModel/Model";
 import { useTranslation } from "react-i18next";
-
+import "./style/styles.css";
 export const Home = () => {
   const { t } = useTranslation();
   return (
@@ -13,71 +13,97 @@ export const Home = () => {
         boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
         background:
           "url(assets/3.jpg) no-repeat top center, linear-gradient(to left, #243B55, #141E30) no-repeat bottom center",
-        backgroundSize: "100% 68%, 100% 50%",
+        backgroundSize: {
+          xs: "100% 50%, 100% 50%",
+          sm: "100% 50%, 100% 50%",
+          md: "100% 68%, 100% 50%",
+          lg: "100% 68%, 100% 50%",
+        },
       }}
     >
-      <CssBaseline enableColorScheme />
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: {
+            xs: "column-reverse",
+            sm: "column-reverse",
+            md: "row",
+            lg: "row",
+          },
         }}
       >
-        <Button
-          href={
-            t("home.cv") == "Descargar CV"
-              ? "https://drive.google.com/file/d/1Gl3E6h8x7mffFUPxSu7HOcTHwzA3OkfA/view?usp=sharing"
-              : "https://drive.google.com/file/d/1VPJ2NqHJyABuM1bY72JJsDCozhV1oIG7/view?usp=sharing"
-          }
-          sx={{
-            backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
-            border: "0.2rem solid rgba(104, 126, 136, 0.9)",
-            borderRadius: "1.5rem",
-            color: "rgba(255, 255, 255, 0.9)",
-            margin: "82vh 0 0 90vh",
-            position: "absolute",
-            width: "22vh",
-            zIndex: 2,
-            transition: "background-color 0.3s", // Animación suave
-            "&:hover": {
-              backgroundColor: "hsla(187, 90.30%, 51.40%, 0.8)",
-            },
-          }}
-        >
-          {t("home.cv")}
-        </Button>
         <Box
           sx={{
-            backgroundColor: "hsla(210, 55.70%, 45.10%, 0.3)",
+            backgroundColor: {
+              xs: "transparent",
+              sm: "transparent",
+              md: "hsla(210, 55.70%, 45.10%, 0.3)",
+              lg: "hsla(210, 55.70%, 45.10%, 0.3)",
+            },
             borderRadius: "100rem",
-            boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
-            height: "85vh",
-            margin: " 6.5rem 0 0 3rem",
-            width: "85vh",
+            boxShadow: {
+              xs: "none",
+              sm: "none",
+              md: "inset 0 0 30rem rgba(0, 0, 0, .5)",
+              lg: "inset 0 0 30rem rgba(0, 0, 0, .5)",
+            },
+            height: { md: "55vh", lg: "85vh" },
+            width: { md: "55vh", lg: "85vh" },
+            margin: { md: "6rem 0 0 0.5rem", lg: "1rem 0 0 3rem" },
             zIndex: 1,
           }}
         >
+          {/* // 3D Model Box  */}
+
           <Box
             sx={{
               justifyContent: "flex-start",
-              width: "125vh",
-              height: "86vh",
+              width: { xs: "120vh", sm: "120vh", md: "122vh", lg: "125vh" },
+              height: { xs: "60vh", sm: "60vh", md: "68vh", lg: "86vh" },
               padding: "0 0 0 0",
-              margin: "0 0 0 -5rem",
+              margin: {
+                xs: "8vh 0 0 -32vh",
+                sm: "7vh 0 0 -36vh",
+                md: "-6vh 0 0 -14rem",
+                lg: "0 0 0 -5rem",
+              },
               zIndex: 1,
             }}
           >
             <Model />
           </Box>
         </Box>
-        <Box sx={{ justifyContent: "flex-end", margin: "10rem 0 0 9rem" }}>
+
+        {/* // Avatar and Text */}
+
+        <Box
+          sx={{
+            justifyContent: {
+              xs: "flex-start",
+              sm: "flex-start",
+              md: "flex-end",
+              lg: "flex-end",
+            },
+            margin: {
+              xs: "6rem 0 0 -4rem",
+              sm: "6rem 0 0 -4rem",
+              md: "10rem 0 0 -4rem",
+              lg: "10rem 0 0 13rem",
+            },
+          }}
+        >
           <Avatar
             alt="picture"
             src="assets/projectPictures/avatar.jpg"
             sx={{
-              width: 300,
-              height: 300,
-              marginBottom: "1.5rem",
+              width: { xs: 250, sm: 250, md: 300, lg: 300 },
+              height: { xs: 250, sm: 250, md: 300, lg: 300 },
+              marginBottom: {
+                xs: "0",
+                sm: "0",
+                md: "1.5rem",
+                lg: "1.5rem",
+              },
               marginLeft: "10rem",
             }}
           />
@@ -85,7 +111,7 @@ export const Home = () => {
             sx={{
               color: "rgba(241, 234, 234, 0.86)",
               fontWeight: "bold",
-              fontSize: 75,
+              fontSize: { xs: 60, sm: 60, md: 75, lg: 75 },
               marginBottom: "2rem",
               marginLeft: "6rem",
               position: "absolute",
@@ -95,18 +121,7 @@ export const Home = () => {
           >
             {t("home.name")}
           </Typography>
-          <div
-            style={{
-              color: "hsla(187, 90.30%, 51.40%, 0.76)",
-              display: "flex",
-              fontSize: 40,
-              fontWeight: "bold",
-              justifyContent: "flex-start",
-              textAlign: "left",
-              marginTop: "10rem",
-              width: "80%",
-            }}
-          >
+          <div className="typer">
             <div
               style={{
                 color: "hsl(192, 33.30%, 97.10%)",
@@ -125,6 +140,37 @@ export const Home = () => {
           </div>
         </Box>
       </Box>
+              {/* /// Button CV /// */}
+              <Box>
+          <Button
+            href={
+              t("home.cv") == "Descargar CV"
+                ? "https://drive.google.com/file/d/1Gl3E6h8x7mffFUPxSu7HOcTHwzA3OkfA/view?usp=sharing"
+                : "https://drive.google.com/file/d/1VPJ2NqHJyABuM1bY72JJsDCozhV1oIG7/view?usp=sharing"
+            }
+            sx={{
+              backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
+              border: "0.2rem solid rgba(104, 126, 136, 0.9)",
+              borderRadius: "1.5rem",
+              color: "rgba(255, 255, 255, 0.9)",
+              margin: {
+                xs: "-24vh 0 0 0",
+                sm: "10vh 0 0 0",
+                md: "18vh 0 0 0",
+                lg: "0 0 0 0",
+              },
+              
+              width: "22vh",
+              zIndex: 2,
+              transition: "background-color 0.3s", // Animación suave
+              "&:hover": {
+                backgroundColor: "hsla(187, 90.30%, 51.40%, 0.8)",
+              },
+            }}
+          >
+            {t("home.cv")}
+          </Button>
+        </Box>
     </Box>
   );
 };

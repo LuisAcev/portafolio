@@ -1,10 +1,23 @@
 import { Grid2 } from "@mui/material";
-import { ProjectCards } from "./cards/projectCards";
 import { porjects } from "../../assets/projects.js";
+import { ProjectCards } from "./cards/ProjectCards.jsx";
 
 export const Projects = () => {
   return (
-    <Grid2 container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+    <Grid2
+      container
+      rowSpacing={4}
+      columnSpacing={{ xs: 1, sm: 2, md: 5, lg: 5 }}
+      sx={{
+        margin: {
+          xs: "10vh 0 4vh 3vh ",
+          ms: "10vh 0 4vh 0 ",
+          md: "12vh 0 0 0",
+          lg: "12vh 10vh 0 0",
+        },
+        gap: { xs: 1.8, sm: 2, md: 4, lg: 5 },
+      }}
+    >
       {porjects.map((item, index) => (
         <ProjectCards
           key={index}

@@ -18,25 +18,33 @@ import { Skills } from "../template/skills/Skills";
 import { Contact } from "../template/contact/Contact";
 import "tippy.js/dist/tippy.css";
 import { useTranslation } from "react-i18next";
+import { useRef } from "react";
+
 
 export default function SwiperApp() {
   const { t } = useTranslation();
+  const swiperRef = useRef(null);
+
+  const handleButtonClick = (index) => {
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(index); // Cambia al slide correspondiente
+    }
+  };
 
   return (
     <>
-      <AppAppBar />
+      <AppAppBar handleButtonClick={handleButtonClick} />
       <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         style={{
-          height: "100vh",
-          width: "100%",
           background: "linear-gradient(to left, #243B55, #141E30)",
-          
         }}
+        className="swiper"
         direction={"vertical"}
         slidesPerView={1}
         spaceBetween={30}
         mousewheel={true}
-        speed={700} // Tiempo de transicion 
+        speed={600} // Tiempo de transicion
         pagination={{
           clickable: true,
           renderBullet: function (index, className) {
@@ -57,7 +65,6 @@ export default function SwiperApp() {
             theme: "custom",
           });
         }}
-        className="mySwiper"
       >
         <SwiperSlide>
           <Home />

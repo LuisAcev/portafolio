@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Box, Button, Link, Typography } from "@mui/material";
+import { ModalMobil } from "./ModalMobil";
 
 export const ProjectCards = ({
   img,
@@ -21,17 +22,19 @@ export const ProjectCards = ({
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",
-        maxWidth: "40vh",
         border: "0.16rem solid rgba(111, 176, 202, 0.71)",
         borderRadius: "0.7rem",
+        flexDirection: "column",
+        height: { xs:"13vh",md: "25vh", lg: "25vh" },
+        width: { xs: "28vh", md: "38vh", lg: "38vh" },
       }}
     >
       <Box sx={{ display: "flex" }}>
         <Card
           sx={{
-            maxWidth: "40vh",
-            height: "32vh",
+            width: { xs: "38vh", md: "40vh", lg: "38vh" },
+            maxHeight: { xs: "8.8vh", md: "21vh", lg: "21vh" },
+            height: { md: "32vh", lg: "32vh" },
             borderRadius: "0.6rem",
             backgroundColor: "transparent",
             border: "none",
@@ -40,6 +43,7 @@ export const ProjectCards = ({
         >
           <motion.div
             whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.3 }}
             transition={{ type: "spring" }}
             style={{
               Width: "100%",
@@ -68,8 +72,8 @@ export const ProjectCards = ({
                   "linear-gradient(to left,rgba(36, 59, 85, 0.8),rgba(20, 30, 48, 0.8))" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
                 borderRadius: "1.5rem",
                 margin: "0.6rem 0 0.45rem 0.6rem",
-                height: "28vh",
-                width: "38vh",
+                Width: "100%",
+                height: "100%",
                 transition: "1s ",
               }}
             >
@@ -103,12 +107,23 @@ export const ProjectCards = ({
           ) : null}
         </Box>
       </Box>
+      {/* /// buttons Mobil/// */}
+
+      <ModalMobil
+        link={link}
+        repository={repository}
+        text={text}
+        title={title}
+        technologies={technologies}
+      />
+
+      {/* /// buttons web/// */}
       <Box
         sx={{
-          display: "flex",
+          display: { xs: "none", md: "flex", lg: "flex" },
           backgroundColor: "hsla(180, 2.10%, 37.30%, 0.40)",
           justifyContent: "center",
-          gap: 3,
+          gap: { xs: 1.5, md: 3, lg: 3 },
           width: " vh",
         }}
       >
@@ -130,7 +145,11 @@ export const ProjectCards = ({
           variant="h6"
           underline="hover"
           href={link}
-          sx={{ color: "hsl(216, 42.90%, 68.40%)", fontWeight: "bold" }}
+          sx={{
+            color: "hsl(216, 42.90%, 68.40%)",
+            fontWeight: "bold",
+            fontSize: 20,
+          }}
         >
           {" "}
           {t(`card.link`)}
@@ -141,7 +160,11 @@ export const ProjectCards = ({
           variant="h6"
           underline="hover"
           href={repository}
-          sx={{ color: "hsl(216, 42.90%, 68.40%)", fontWeight: "bold" }}
+          sx={{
+            color: "hsl(216, 42.90%, 68.40%)",
+            fontWeight: "bold",
+            fontSize: 20,
+          }}
         >
           {" "}
           {t(`card.repository`)}

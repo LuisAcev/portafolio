@@ -11,14 +11,15 @@ export const LogosCard = ({ img, alt, text }) => {
         alignSelf: "center",
         backgroundColor: "transparent",
         padding: " 0 0 0 0",
-        width: 180,
-        height: 180,
-        transform: "scale(1.2)",
+        width: { xs: 120, md: 180, lg: 180 },
+        height: { md: 180, lg: 180 },
+        transform: { xs: "scale(1.1)", md: "scale(1.2)", lg: "scale(1.2)" },
       }}
     >
       <motion.div
         id="img"
         whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 1.3 }}
         transition={{ type: "spring" }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -37,7 +38,7 @@ export const LogosCard = ({ img, alt, text }) => {
           style={{
             position: "absolute",
             top: "90%",
-            left: "25%",
+            left: "18%",
             transform: "translate(-50%, -50%)",
             background: "rgba(129, 140, 143, 0.7)",
             color: "white",

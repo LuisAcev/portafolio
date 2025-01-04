@@ -1,25 +1,15 @@
-import { useState } from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
-import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
-import Drawer from "@mui/material/Drawer";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { LanguageFlag } from "./LanguageFlags";
 import { dataLenguage } from "../../../assets/lenguageDb.js";
 import SocialMedias from "./SocialMedias.jsx";
 import { Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { MobilMenu } from "./MobilMenu.jsx";
 
-export default function AppAppBar() {
+export default function AppAppBar({ handleButtonClick }) {
   const { t } = useTranslation();
-  const [open, setOpen] = useState(false);
-
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  };
-
   return (
     <AppBar
       position="fixed"
@@ -39,7 +29,7 @@ export default function AppAppBar() {
       <Container maxWidth="lg">
         <Box
           sx={{
-            display: { xs: "none", md: "flex" },
+            display: "flex",
             gap: 1,
             alignItems: "center",
             justifyContent: "flex-end",
@@ -47,9 +37,9 @@ export default function AppAppBar() {
         >
           <Typography
             sx={{
-              fontSize: "16pt",
+              fontSize: { xs: 17, sm: 20, md: 20, lg: 20 },
               fontFamily: "Segoe UI ",
-              margin: "0 1.5vh 0 0",
+              margin: "0 0.5vh 0 0",
             }}
           >
             {t("flags.email")}
@@ -57,43 +47,7 @@ export default function AppAppBar() {
 
           <SocialMedias />
           <LanguageFlag data={dataLenguage} />
-        </Box>
-        <Box
-          sx={{
-            display: { xs: "flex", md: "none" },
-            justifyContent: "flex-end",
-            gap: 1,
-          }}
-        >
-          <SocialMedias />
-          <LanguageFlag data={dataLenguage} />
-
-          <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
-            <MenuIcon />
-          </IconButton>
-          <Drawer
-            anchor="top"
-            open={open}
-            onClose={toggleDrawer(false)}
-            PaperProps={{
-              sx: {
-                top: "var(--template-frame-height, 0px)",
-              },
-            }}
-          >
-            <Box sx={{ p: 2, backgroundColor: "background.default" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <IconButton onClick={toggleDrawer(false)}>
-                  <CloseRoundedIcon />
-                </IconButton>
-              </Box>
-            </Box>
-          </Drawer>
+          <MobilMenu handleButtonClick={handleButtonClick} />
         </Box>
       </Container>
     </AppBar>

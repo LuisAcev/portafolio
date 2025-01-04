@@ -1,0 +1,30 @@
+.hidden-mobile {
+  border-top: 0.16rem solid rgba(111, 176, 202, 0.71);
+  width: 100% !important;
+  height: 29% !important;
+  margin-top: 5rem !important;
+}
+
+@media screen and (max-width: 500px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hidden-mobile {
+    border-top: 0.16rem solid rgba(111, 176, 202, 0.71);
+    width: 100% !important;
+    height: 25% !important;
+    margin-top: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hidden-mobile {
+    border-top: 0.16rem solid rgba(111, 176, 202, 0.71);
+    width: 100% !important;
+    height: 21% !important;
+    margin-top: 5rem !important;
+  }
+}
