@@ -14,7 +14,7 @@ export const Home = () => {
         background:
           "url(assets/3.jpg) no-repeat top center, linear-gradient(to left, #243B55, #141E30) no-repeat bottom center",
         backgroundSize: {
-          xs: "100% 51%, 100% 50%",
+          xs: "100% 52%, 100% 50%",
           sm: "100% 54%, 100% 50%",
           md: "100% 68%, 100% 50%",
           lg: "100% 68%, 100% 50%",
