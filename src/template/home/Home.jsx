@@ -62,7 +62,7 @@ export const Home = () => {
               height: { xs: "60vh", sm: "60vh", md: "68vh", lg: "86vh" },
               padding: "0 0 0 0",
               margin: {
-                xs: "8vh 0 0 -32vh",
+                xs: "2vh 0 0 -32vh",
                 sm: "7vh 0 0 -36vh",
                 md: "-6vh 0 0 -14rem",
                 lg: "0 0 0 -5rem",
@@ -85,7 +85,7 @@ export const Home = () => {
               lg: "flex-end",
             },
             margin: {
-              xs: "6rem 0 0 -4rem",
+              xs: "8rem 0 0 -5rem",
               sm: "6rem 0 0 -4rem",
               md: "10rem 0 0 -4rem",
               lg: "10rem 0 0 13rem",
@@ -96,8 +96,8 @@ export const Home = () => {
             alt="picture"
             src="assets/projectPictures/avatar.jpg"
             sx={{
-              width: { xs: 250, sm: 250, md: 300, lg: 300 },
-              height: { xs: 250, sm: 250, md: 300, lg: 300 },
+              width: { xs: 230, sm: 250, md: 300, lg: 300 },
+              height: { xs: 230, sm: 250, md: 300, lg: 300 },
               marginBottom: {
                 xs: "0",
                 sm: "0",
@@ -154,7 +154,7 @@ export const Home = () => {
               borderRadius: "1.5rem",
               color: "rgba(255, 255, 255, 0.9)",
               margin: {
-                xs: "-24vh 0 0 0",
+                xs: "-29vh 0 0 0",
                 sm: "10vh 0 0 0",
                 md: "18vh 0 0 0",
                 lg: "0 0 0 0",

@@ -37,9 +37,9 @@ export default function AppAppBar({ handleButtonClick }) {
         >
           <Typography
             sx={{
-              fontSize: { xs: 17, sm: 20, md: 20, lg: 20 },
+              fontSize: { xs: 16, sm: 20, md: 20, lg: 20 },
               fontFamily: "Segoe UI ",
-              margin: "0 0.5vh 0 0",
+              margin: "0 0 0 0",
             }}
           >
             {t("flags.email")}

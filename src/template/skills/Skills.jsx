@@ -10,7 +10,7 @@ export const Skills = () => {
       columnSpacing={{ xs: 6, sm: 2, md: 10, lg: 18 }}
       sx={{
         margin: {
-          xs: "14vh 0 0 1rem",
+          xs: "10vh 0 0 -1vh",
           sm: "14vh 15vh 0 1vh",
           md: "14vh 0 0 8rem",
           lg: "18vh 2vh 0 7rem",

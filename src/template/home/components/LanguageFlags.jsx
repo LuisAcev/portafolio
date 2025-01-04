@@ -52,7 +52,7 @@ export function LanguageFlag({ data = [], sx, ...other }) {
         sx={{
           backgroundColor: "hsla(211, 17.40%, 51.60%, 0.90)",
           border:" 0.3rem solid hsla(211, 77.50%, 15.70%, 0.80)", 
-          margin:{xs:"0 -1.6vh 0 0", md:"0 0 0 -0.6vh" ,lg:"0 0 0 -0.6vh"},
+          margin:{xs:"0 -2vh 0 0", md:"0 0 0 -0.6vh" ,lg:"0 0 0 -0.6vh"},
           width: { xs: 47, md: 55, lg: 54 },
           height: { xs: 47, md: 55, lg: 54 },
           transition: "background-color 0.3s", // Animación suave

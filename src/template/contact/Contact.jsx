@@ -63,12 +63,12 @@ export const Contact = () => {
             alignContent: "center",
             gap: 2,
             padding: {
-              xs: "1.5rem 0.5rem 2rem 0.5rem",
+              xs: "1.5rem 0.5rem 1rem 0.5rem",
               md: "3rem 2rem 2rem 2rem",
               lg: "3rem 2rem 2rem 2rem",
             },
             margin: {
-              xs: "-4vh 1vh 0 -2vh",
+              xs: "-2vh 1vh 0 -2.5vh",
               sm: "2vh 15vh 0 1vh",
               md: "14vh 18vh 0 4vh",
               lg: "14vh 24vh 0 4vh",
@@ -146,7 +146,7 @@ export const Contact = () => {
                   color: "hsla(0, 0.00%, 100.00%, 0.8)",
                   height: "auto",
                   paddingBottom: {
-                    xs: "240px",
+                    xs: "160px",
                     sm: "80px",
                     md: "80px",
                     lg: "70px",
