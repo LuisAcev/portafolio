@@ -49,7 +49,7 @@ export const Home = () => {
             },
             height: { md: "55vh", lg: "85vh" },
             width: { md: "55vh", lg: "85vh" },
-            margin: { md: "6rem 0 0 0.5rem", lg: "1rem 0 0 3rem" },
+            margin: { md: "6rem 0 0 0.5rem", lg: "10vh 0 0 3rem" },
             zIndex: 1,
           }}
         >
@@ -156,8 +156,8 @@ export const Home = () => {
             margin: {
               xs: "-31vh 0 0 0",
               sm: "10vh 0 0 0",
-              md: "18vh 0 0 0",
-              lg: "0 0 0 0",
+              md: "18vh 0 0 4vh",
+              lg: "-14vh 0 0 0",
             },
 
             width: "22vh",

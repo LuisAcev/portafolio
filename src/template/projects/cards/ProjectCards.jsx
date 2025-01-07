@@ -25,6 +25,7 @@ export const ProjectCards = ({
         border: "0.16rem solid rgba(111, 176, 202, 0.71)",
         borderRadius: "0.7rem",
         flexDirection: "column",
+        maxHeight: "30vh",
         height: { xs: "13vh", md: "25vh", lg: "25vh" },
         width: { xs: "16.5vh", md: "38vh", lg: "38vh" },
       }}
@@ -35,8 +36,8 @@ export const ProjectCards = ({
         <Card
           sx={{
             width: { xs: "38vh", md: "40vh", lg: "38vh" },
-            height: {xs: "9.5vh", md: "32vh", lg: "32vh" }, //tamaño definido
-            maxHeight: { xs: "9.5vh", md: "21vh", lg: "21vh" }, // Tamaño que va usar del definico
+            height: { xs: "9.5vh", md: "32vh", lg: "32vh" }, //tamaño definido
+            maxHeight: { xs: "9.5vh", md: "21vh", lg: "21.4vh" }, // Tamaño que va usar del definico
             borderRadius: "0.6rem",
             backgroundColor: "transparent",
             border: "none",
@@ -73,9 +74,10 @@ export const ProjectCards = ({
                 background:
                   "linear-gradient(to left,rgba(36, 59, 85, 0.8),rgba(20, 30, 48, 0.8))" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
                 borderRadius: "1.5rem",
-                margin: "0.6rem 0 0.45rem 0.6rem",
-                Width: "100%",
-                height: "100%",
+                display: { sx: "none", ms: "none" },
+                margin: "0 2.5vh 0 0.5vh",
+                Width: "30vh",
+                height: "20vh",
                 transition: "1s ",
               }}
             >
@@ -87,7 +89,7 @@ export const ProjectCards = ({
                   backgroundColor: "transparent",
                   color: "hsla(0, 0.00%, 99.20%, 0.92)",
                   fontWeight: "bold",
-                  padding: "1.5rem 0 0 0",
+                  padding: "3hv 0 0 0",
                 }}
               >
                 {title}
@@ -96,13 +98,13 @@ export const ProjectCards = ({
                 variant="body2"
                 sx={{
                   color: "hsla(0, 0.00%, 99.20%, 0.92)",
-                  width: "85%",
-                  margin: "1.5rem 0 9.1rem 0.5rem",
+                  width: "90%",
+                  margin: "1vh 0 9.1rem 0.5rem",
                 }}
               >
                 {`Landing page: ${t(`projects.${text}`)}`}
                 <br />
-                <br />
+
                 {`${t(`projects.technologies`)}: ${technologies}`}
               </Typography>
             </Box>
@@ -126,7 +128,6 @@ export const ProjectCards = ({
           backgroundColor: "hsla(180, 2.10%, 37.30%, 0.40)",
           justifyContent: "center",
           gap: { xs: 1.5, md: 3, lg: 3 },
-          width: " vh",
         }}
       >
         {/* // Details APP */}
@@ -134,7 +135,7 @@ export const ProjectCards = ({
           onClick={handleDetails}
           sx={{
             color: "hsl(216, 42.90%, 68.40%)",
-            fontSize: 20,
+            fontSize: { md: 18, lg: 18 },
             fontWeight: "bold",
             padding: "0 0 0 0",
             textTransform: "none",
@@ -150,7 +151,7 @@ export const ProjectCards = ({
           sx={{
             color: "hsl(216, 42.90%, 68.40%)",
             fontWeight: "bold",
-            fontSize: 20,
+            fontSize: { md: 18, lg: 18 },
           }}
         >
           {" "}
@@ -165,7 +166,7 @@ export const ProjectCards = ({
           sx={{
             color: "hsl(216, 42.90%, 68.40%)",
             fontWeight: "bold",
-            fontSize: 20,
+            fontSize: { md: 18, lg: 18 },
           }}
         >
           {" "}

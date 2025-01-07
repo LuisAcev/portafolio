@@ -23,7 +23,7 @@ export const porjects = [
     text: "dashboard",
     link: "https://luisacev.github.io/Dashboard/",
     repository:
-      "https://github.com/LuisAcev/layout-with-react.js-and-material-UI",
+      "https://github.com/LuisAcev/Dashboard",
     technologies: " JavaScript, React, Material UI, React-Router-Dom, swiper",
   },
   {
@@ -48,7 +48,7 @@ export const porjects = [
     title: "CRUD",
     img: "https://github.com/LuisAcev/CRUD-Users-Management-App-Redux-ToolKit/blob/main/public/crud.jpg?raw=true",
     text: "crud",
-    link: "https://github.com/LuisAcev/CRUD-Users-Management-App-Redux-ToolKit",
+    link: "https://luisacev.github.io/CRUD-Users-Management-App-Redux-ToolKit/",
     repository: "https://github.com/LuisAcev/CRUD-Users-Management-App-Redux-ToolKit",
     technologies:
       " JavaScript, React, Material UI, ReduxTool Kit, RTK, React-Router-Dom ",
