@@ -19,7 +19,7 @@ export const porjects = [
   },
   {
     title: "DashBoard",
-    img: "https://github.com/LuisAcev/layout-with-react.js-and-material-UI/blob/main/public/dashboard.jpg?raw=true",
+    img: "https://github.com/LuisAcev/Dashboard/blob/main/public/dashboard.jpg?raw=true",
     text: "dashboard",
     link: "https://luisacev.github.io/Dashboard/",
     repository:
@@ -37,7 +37,7 @@ export const porjects = [
   },
   {
     title: "Portafolio",
-    img: "/assets/projectPictures/portafolio.jpg",
+    img: "https://github.com/LuisAcev/portafolio/blob/main/public/assets/projectPictures/portafolio.jpg?raw=true",
     text: "portafolio",
     link: "https://luisacev.github.io/portafolio/",
     repository: "https://github.com/LuisAcev/portafolio",
