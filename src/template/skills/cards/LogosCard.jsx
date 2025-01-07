@@ -30,6 +30,8 @@ export const LogosCard = ({ img, alt, text }) => {
       >
         <img id="img" src={img} alt={alt} />
       </motion.div>
+
+      {/* Dimensiones de la tarjeta del logo  */}
       {isHovered && (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -38,12 +40,12 @@ export const LogosCard = ({ img, alt, text }) => {
           style={{
             position: "absolute",
             top: "90%",
-            left: "18%",
+            left: "11%",
             transform: "translate(-50%, -50%)",
             background: "rgba(129, 140, 143, 0.7)",
             color: "white",
             padding: "10px 20px",
-            borderRadius: "5px",
+            borderRadius: "8px",
             textAlign: "center",
           }}
         >
