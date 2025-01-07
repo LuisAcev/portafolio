@@ -10,7 +10,7 @@ export const Projects = () => {
       columnSpacing={{ xs: 1, sm: 2, md: 5, lg: 5 }}
       sx={{
         margin: {
-          xs: "10vh 0 4vh 3vh ",
+          xs: "14vh 0 4vh -2vh ",
           ms: "10vh 0 4vh 0 ",
           md: "12vh 0 0 0",
           lg: "12vh 10vh 0 0",

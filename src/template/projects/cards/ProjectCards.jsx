@@ -25,16 +25,18 @@ export const ProjectCards = ({
         border: "0.16rem solid rgba(111, 176, 202, 0.71)",
         borderRadius: "0.7rem",
         flexDirection: "column",
-        height: { xs:"13vh",md: "25vh", lg: "25vh" },
-        width: { xs: "28vh", md: "38vh", lg: "38vh" },
+        height: { xs: "13vh", md: "25vh", lg: "25vh" },
+        width: { xs: "16.5vh", md: "38vh", lg: "38vh" },
       }}
     >
       <Box sx={{ display: "flex" }}>
+        {/* tamaño y dimenciones del  componente Card */}
+
         <Card
           sx={{
             width: { xs: "38vh", md: "40vh", lg: "38vh" },
-            maxHeight: { xs: "8.8vh", md: "21vh", lg: "21vh" },
-            height: { md: "32vh", lg: "32vh" },
+            height: {xs: "9.5vh", md: "32vh", lg: "32vh" }, //tamaño definido
+            maxHeight: { xs: "9.5vh", md: "21vh", lg: "21vh" }, // Tamaño que va usar del definico
             borderRadius: "0.6rem",
             backgroundColor: "transparent",
             border: "none",

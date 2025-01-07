@@ -21,7 +21,7 @@ export const porjects = [
     title: "DashBoard",
     img: "https://github.com/LuisAcev/layout-with-react.js-and-material-UI/blob/main/public/dashboard.jpg?raw=true",
     text: "dashboard",
-    link: "https://github.com/LuisAcev/layout-with-react.js-and-material-UI",
+    link: "https://luisacev.github.io/Dashboard/",
     repository:
       "https://github.com/LuisAcev/layout-with-react.js-and-material-UI",
     technologies: " JavaScript, React, Material UI, React-Router-Dom, swiper",
@@ -39,7 +39,7 @@ export const porjects = [
     title: "Portafolio",
     img: "/assets/projectPictures/portafolio.jpg",
     text: "portafolio",
-    link: "https://github.com/LuisAcev/portafolio",
+    link: "https://luisacev.github.io/portafolio/",
     repository: "https://github.com/LuisAcev/portafolio",
     technologies:
       " JavaScript, React, Material UI, React-Hook-Forms, Yup, swiper",

@@ -35,7 +35,8 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
           color: "hsl(216, 42.90%, 68.40%)",
           fontSize: 16,
           fontWeight: "bold",
-          width:"100%"
+          width:"100%",
+          height:"80%"
         }}
       >
         {t(`card.details`)}
