@@ -12,10 +12,10 @@ export const porjects = [
     title: "Journal",
     img: "https://github.com/LuisAcev/Journal-app/blob/main/public/journal.jpg?raw=true",
     text: "journal",
-    link: "https://github.com/LuisAcev/Journal-app",
+    link: "https://luisacev.github.io/Journal-app/",
     repository: "https://github.com/LuisAcev/Journal-app",
     technologies:
-      " JavaScript, React, Material UI, ReduxTool Kit, React-Router-Dom ",
+      " JavaScript, React, Material UI, ReduxTool Kit, RTQ, React-Router-Dom ",
   },
   {
     title: "DashBoard",
