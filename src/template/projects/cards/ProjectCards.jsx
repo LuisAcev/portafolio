@@ -23,10 +23,10 @@ export const ProjectCards = ({
       sx={{
         display: "flex",
         border: "0.16rem solid rgba(111, 176, 202, 0.71)",
-        borderRadius: "0.7rem",
+        borderRadius: "0.5rem",
         flexDirection: "column",
         maxHeight: "30vh",
-        height: { xs: "13.2vh", md: "25vh", lg: "25vh" },
+        height: { xs: "13.3vh", md: "25vh", lg: "25vh" },
         width: { xs: "16.5vh", md: "38vh", lg: "38vh" },
       }}
     >
@@ -38,7 +38,6 @@ export const ProjectCards = ({
             width: { xs: "38vh", md: "40vh", lg: "38vh" },
             height: { xs: "9.5vh", md: "32vh", lg: "32vh" }, //tamaño definido
             maxHeight: { xs: "9.5vh", md: "21vh", lg: "21.4vh" }, // Tamaño que va usar del definico
-            borderRadius: "0.6rem",
             backgroundColor: "transparent",
             border: "none",
             zIndex: 1,
@@ -59,7 +58,6 @@ export const ProjectCards = ({
         <Box
           sx={{
             backgroundColor: "transparent",
-            borderRadius: "1.5rem",
             position: "absolute",
             width: "40vh",
             margin: "0.5rem 0 1rem 0",
