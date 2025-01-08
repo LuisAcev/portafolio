@@ -26,7 +26,7 @@ export const ProjectCards = ({
         borderRadius: "0.7rem",
         flexDirection: "column",
         maxHeight: "30vh",
-        height: { xs: "13vh", md: "25vh", lg: "25vh" },
+        height: { xs: "13.2vh", md: "25vh", lg: "25vh" },
         width: { xs: "16.5vh", md: "38vh", lg: "38vh" },
       }}
     >
