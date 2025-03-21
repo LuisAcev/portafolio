@@ -3,7 +3,7 @@ export const porjects = [
     title: "Trade Analyzer",
     img: "https://github.com/LuisAcev/Trading-app-front/blob/main/public/helpers/home.jpg?raw=true",
     text: "tradeanalyzer",
-    link: "https://github.com/LuisAcev/Trading-app-front",
+    link: "https://luisacev.github.io/Trading-app-front",
     repository: "https://github.com/LuisAcev/Trading-app-front",
     technologies:
       " JavaScript, React, Material UI, ReduxTool Kit, RTK, React-Hook-Forms, Yup, React-Router-Dom, React-konva, swiper",
