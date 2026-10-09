@@ -78,8 +78,7 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
             {/* // Details APP */}
 
             {/* // web site */}
-            {text !==
-              "tradeanalyzerBack" && (
+            {text !== "tradeanalyzerBack" && (
                 <Link
                   variant="h6"
                   underline="hover"
@@ -93,7 +92,7 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
                 >
                   {" "}
                   {t(`card.link`)}
-                </Link>,
+                </Link>
               )}
 
             {/* // repository */}
