@@ -27,7 +27,7 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
   const { t } = useTranslation();
 
   return (
-    <Box sx={{ display: {  lg: "none" } }}>
+    <Box sx={{ display: { lg: "none" } }}>
       <Button
         onClick={handleOpen}
         sx={{
@@ -35,8 +35,8 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
           color: "hsl(216, 42.90%, 68.40%)",
           fontSize: 16,
           fontWeight: "bold",
-          width:"100%",
-          height:"80%"
+          width: "100%",
+          height: "80%",
         }}
       >
         {t(`card.details`)}
@@ -78,20 +78,23 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
             {/* // Details APP */}
 
             {/* // web site */}
-            <Link
-              variant="h6"
-              underline="hover"
-              href={link}
-              sx={{
-                borderBottom: "2px solid hsla(204, 85.20%, 60.20%, 0.88)",
-                color: "hsla(204, 85.20%, 60.20%, 0.88)",
-                fontWeight: "bold",
-                fontSize: 24,
-              }}
-            >
-              {" "}
-              {t(`card.link`)}
-            </Link>
+            {text !==
+              "tradeanalyzerBack" && (
+                <Link
+                  variant="h6"
+                  underline="hover"
+                  href={link}
+                  sx={{
+                    borderBottom: "2px solid hsla(204, 85.20%, 60.20%, 0.88)",
+                    color: "hsla(204, 85.20%, 60.20%, 0.88)",
+                    fontWeight: "bold",
+                    fontSize: 24,
+                  }}
+                >
+                  {" "}
+                  {t(`card.link`)}
+                </Link>,
+              )}
 
             {/* // repository */}
             <Link

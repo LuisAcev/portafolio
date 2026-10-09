@@ -1,12 +1,21 @@
 export const porjects = [
   {
-    title: "Trade Analyzer",
+    title: "Trade Analyzer Front-End",
     img: "https://github.com/LuisAcev/Trading-app-front/blob/main/public/helpers/home.jpg?raw=true",
-    text: "tradeanalyzer",
+    text: "tradeanalyzerFront",
     link: "https://luisacev.github.io/Trading-app-front",
     repository: "https://github.com/LuisAcev/Trading-app-front",
     technologies:
       " JavaScript, React, Material UI, ReduxTool Kit, RTK, React-Hook-Forms, Yup, React-Router-Dom, React-konva, swiper",
+  },
+  {
+    title: "Trade Analyzer Back-End",
+    img: `${import.meta.env.BASE_URL}assets/logos/tradeanalyzerBack.svg`,
+    text: "tradeanalyzerBack",
+    //link: "https://luisacev.github.io/web-editor/",
+    repository: "https://github.com/LuisAcev/Trading-app-Back",
+    technologies:
+      "Node.js, Express, MongoDB, Mongoose, JWT, Axios, CORS, dotenv, node-fetch",
   },
   {
     title: "Web Editor",

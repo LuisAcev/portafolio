@@ -109,7 +109,7 @@ export const ProjectCards = ({
           ) : null}
         </Box>
       </Box>
-      
+
       {/* /// buttons Mobil/// */}
 
       <ModalMobil
@@ -121,7 +121,7 @@ export const ProjectCards = ({
       />
 
       {/* /// buttons web/// */}
-      
+
       <Box
         sx={{
           display: { xs: "none", md: "none", lg: "flex" },
@@ -144,19 +144,21 @@ export const ProjectCards = ({
           {t(`card.details`)}
         </Button>
         {/* // web site */}
-        <Link
-          variant="h6"
-          underline="hover"
-          href={link}
-          sx={{
-            color: "hsl(216, 42.90%, 68.40%)",
-            fontWeight: "bold",
-            fontSize: { md: 14, lg: 18 },
-          }}
-        >
-          {" "}
-          {t(`card.link`)}
-        </Link>
+        {text !== "tradeanalyzerBack" && (
+          <Link
+            variant="h6"
+            underline="hover"
+            href={link}
+            sx={{
+              color: "hsl(216, 42.90%, 68.40%)",
+              fontWeight: "bold",
+              fontSize: { md: 14, lg: 18 },
+            }}
+          >
+            {" "}
+            {t(`card.link`)}
+          </Link>
+        )}
 
         {/* // repository */}
         <Link
