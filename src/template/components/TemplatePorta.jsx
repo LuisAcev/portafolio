@@ -34,7 +34,7 @@ export const TemplatePorta = ({ component, componenteName }) => {
           {t(`pagestemplate.${componenteName}`)}
         </Typography>
         <img
-          src={"https://github.com/LuisAcev/portafolio/blob/main/public/assets/4.jpg?raw=true"} // Imagen pie de pagina 
+          src={"assets/4.jpg"} // Imagen pie de pagina 
           className="hidden-mobile"
         />
       </Box>

@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import { Model } from "./3DModel/Model";
 import { useTranslation } from "react-i18next";
