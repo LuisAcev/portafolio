@@ -27,7 +27,7 @@ export const ProjectCards = ({
         flexDirection: "column",
         maxHeight: "30vh",
         height: { xs: "13.3vh", md: "25vh", lg: "25vh" },
-        width: { xs: "16.5vh", md: "38vh", lg: "38vh" },
+        width: { xs: "16.5vh", md: "20vh", lg: "38vh" },
       }}
     >
       <Box sx={{ display: "flex" }}>
@@ -35,9 +35,9 @@ export const ProjectCards = ({
 
         <Card
           sx={{
-            width: { xs: "38vh", md: "40vh", lg: "38vh" },
-            height: { xs: "9.5vh", md: "32vh", lg: "32vh" }, //tamaño definido
-            maxHeight: { xs: "9.5vh", md: "21vh", lg: "21.4vh" }, // Tamaño que va usar del definico
+            width: { xs: "38vh", md: "30vh", lg: "38vh" },
+            height: { xs: "9.5vh", md: "30vh", lg: "32vh" }, //tamaño definido
+            maxHeight: { xs: "9.5vh", md: "22vh", lg: "21.4vh" }, // Tamaño que va usar del definico
             backgroundColor: "transparent",
             border: "none",
             zIndex: 1,
@@ -109,6 +109,7 @@ export const ProjectCards = ({
           ) : null}
         </Box>
       </Box>
+      
       {/* /// buttons Mobil/// */}
 
       <ModalMobil
@@ -120,9 +121,10 @@ export const ProjectCards = ({
       />
 
       {/* /// buttons web/// */}
+      
       <Box
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "none", lg: "flex" },
           backgroundColor: "hsla(180, 2.10%, 37.30%, 0.40)",
           justifyContent: "center",
           gap: { xs: 1.5, md: 3, lg: 3 },
@@ -133,7 +135,7 @@ export const ProjectCards = ({
           onClick={handleDetails}
           sx={{
             color: "hsl(216, 42.90%, 68.40%)",
-            fontSize: { md: 18, lg: 18 },
+            fontSize: { md: 14, lg: 18 },
             fontWeight: "bold",
             padding: "0 0 0 0",
             textTransform: "none",
@@ -149,7 +151,7 @@ export const ProjectCards = ({
           sx={{
             color: "hsl(216, 42.90%, 68.40%)",
             fontWeight: "bold",
-            fontSize: { md: 18, lg: 18 },
+            fontSize: { md: 14, lg: 18 },
           }}
         >
           {" "}
@@ -164,7 +166,7 @@ export const ProjectCards = ({
           sx={{
             color: "hsl(216, 42.90%, 68.40%)",
             fontWeight: "bold",
-            fontSize: { md: 18, lg: 18 },
+            fontSize: { md: 14, lg: 18 },
           }}
         >
           {" "}

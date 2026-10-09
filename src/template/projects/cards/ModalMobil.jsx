@@ -27,7 +27,7 @@ export const ModalMobil = ({ link, repository, text, title, technologies }) => {
   const { t } = useTranslation();
 
   return (
-    <Box sx={{ display: { md: "none", lg: "none" } }}>
+    <Box sx={{ display: {  lg: "none" } }}>
       <Button
         onClick={handleOpen}
         sx={{
