@@ -15,6 +15,11 @@ export const logosCardArray = [
     text: "javaScript",
   },
   {
+    img: "assets/logos/typescript.svg",
+    alt: "typescript",
+    text: "Typescript",
+  },
+  {
     img: "assets/logos/express.svg",
     alt: "express",
     text: "Express",
@@ -44,5 +49,20 @@ export const logosCardArray = [
     img: "assets/logos/graphql.svg",
     alt: "graphql",
     text: "Graphql",
+  },
+  {
+    img: "assets/logos/docker.svg",
+    alt: "docker",
+    text: "Docker",
+  },
+  {
+    img: "assets/logos/mongodb.svg",
+    alt: "mongodb",
+    text: "MongoDB",
+  },
+  {
+    img: "assets/logos/sqldb.svg",
+    alt: "sqldb",
+    text: "SQL",
   },
 ];

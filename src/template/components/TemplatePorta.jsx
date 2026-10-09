@@ -5,20 +5,16 @@ import "./style.css";
 export const TemplatePorta = ({ component, componenteName }) => {
   const { t } = useTranslation();
   return (
-    <Box
-      sx={{
-        display: "flex",
-        background: "#141E30" /* fallback for old browsers */,
-        background:
-          "-webkit-linear-gradient(to left, #243B55, #141E30)" /* Chrome 10-25, Safari 5.1-6 */,
-        background:
-          "linear-gradient(to left, #243B55, #141E30)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
-        boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
-        flexDirection: "row",
-        height: { xs: "100%", md: "100vh", lg: "100vh" },
-        width: "100%",
-      }}
-    >
+<Box
+  sx={{
+    display: "flex",
+    background: "hsla(210, 100%, 10%, 0.55)", // deja ver el fondo del Swiper
+    boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
+    flexDirection: "row",
+    height: { xs: "100%", md: "100vh", lg: "100vh" },
+    width: "100%",
+  }}
+>
       <Box
         sx={{
           width: "12%",

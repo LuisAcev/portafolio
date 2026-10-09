@@ -20,7 +20,6 @@ import "tippy.js/dist/tippy.css";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 
-
 export default function SwiperApp() {
   const { t } = useTranslation();
   const swiperRef = useRef(null);
@@ -37,7 +36,10 @@ export default function SwiperApp() {
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         style={{
-          background: "linear-gradient(to left, #243B55, #141E30)",
+          background: `
+    linear-gradient(hsla(210, 100%, 10%, 0.5), hsla(210, 100%, 10%, 0.75)),
+    url("${import.meta.env.BASE_URL}assets/bg.jpg") center / cover no-repeat
+  `,
         }}
         className="swiper"
         direction={"vertical"}

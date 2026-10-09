@@ -15,14 +15,13 @@ export default function AppAppBar({ handleButtonClick }) {
       position="fixed"
       enableColorOnDark
       sx={{
-        boxShadow: 0,
-        background:
-          "-webkit-linear-gradient(to left, #243B55,rgb(81, 94, 121))" /* Chrome 10-25, Safari 5.1-6 */,
-        background:
-          "linear-gradient(to left, #243B55,rgb(64, 78, 105))" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+        // Misma familia de color que la capa del Swiper y de TemplatePorta
+        background: "hsla(211, 97%, 13%, 0.75)",
+        // Desenfoca lo que pasa por detrás (efecto vidrio)
+        backdropFilter: "blur(10px)",
         height: "5rem",
         padding: "0.8rem 0 0 0",
-        boxShadow: "inset 0 0 30rem hsla(210, 53.40%, 28.60%, 0.90)",
+        boxShadow: "none",
         borderBottom: "0.16rem solid rgba(111, 176, 202, 0.71)",
       }}
     >
@@ -37,9 +36,9 @@ export default function AppAppBar({ handleButtonClick }) {
         >
           <Typography
             sx={{
-              fontSize: { xs: 14, sm: 20, md: 20, lg: 20 },
+              fontSize: { xs: 16, sm: 20, md: 20, lg: 20 },
               fontFamily: "Segoe UI ",
-              margin: "0 0 0 0",
+              margin: "0 1vh 0 0",
             }}
           >
             {t("flags.email")}

@@ -1,26 +1,33 @@
-import { Grid2 } from "@mui/material";
+import { Box } from "@mui/material";
 import { logosCardArray } from "../../assets/logos";
 import { LogosCard } from "./cards/LogosCard";
 
 export const Skills = () => {
   return (
-    <Grid2
-      container
-      rowSpacing={3}
-      columnSpacing={{ xs: 6, sm: 2, md: 10, lg: 18 }}
+    <Box
       sx={{
-        margin: {
-          xs: "9.5vh 0 0 -1vh",
-          sm: "14vh 15vh 0 1vh",
-          md: "14vh 0 0 8rem",
-          lg: "18vh 2vh 0 7rem",
+        display: "grid",
+        gridTemplateColumns: {
+          xs: "repeat(3, auto)",
+          md: "repeat(4, auto)",
+          lg: "repeat(5, auto)",
         },
-        gap:{sm:10 ,md:12,lg:12}
+        justifyContent: "center",
+        justifyItems: "center",
+        alignItems: "center",
+        columnGap: { xs: 2, sm: 4, md: 8, lg: 12 },
+        rowGap: { xs: 2, sm: 3, md: 4, lg: 5 },
+        margin: {
+          xs: "9.5vh 0 0 -3.5vh",
+          sm: "14vh 0 0 0",
+          md: "12vh 4rem 0 -2.5rem",
+          lg: "12vh 8rem 0 4rem",
+        },
       }}
     >
       {logosCardArray.map((item, index) => (
         <LogosCard key={index} img={item.img} alt={item.alt} text={item.text} />
       ))}
-    </Grid2>
+    </Box>
   );
 };

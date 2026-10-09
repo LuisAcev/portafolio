@@ -13,22 +13,27 @@ export const LogosCard = ({ img, alt, text }) => {
         padding: " 0 0 0 0",
         width: { xs: 105, md: 180, lg: 180 },
         height: { md: 165, lg: 180 },
-        transform: { xs: "scale(1.1)", md: "scale(1.2)", lg: "scale(1.2)" },
+        transform: { xs: "scale(1)", md: "scale(1)", lg: "scale(1)" },
       }}
     >
       <motion.div
-        id="img"
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 1.3 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 1.1 }}
         transition={{ type: "spring" }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         style={{
-          Width: "100%",
+          width: "100%",
           height: "100%",
+          padding: "8px",
+          boxSizing: "border-box",
         }}
       >
-        <img id="img" src={img} alt={alt} />
+        <img
+          src={img}
+          alt={alt}
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+        />
       </motion.div>
 
       {/* Dimensiones de la tarjeta del logo  */}

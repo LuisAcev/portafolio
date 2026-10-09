@@ -80,7 +80,7 @@ export const MobilMenu = ({ handleButtonClick }) => {
       sx={{
         backgroundColor: "rgb(16, 23, 39)",
         height: "100%",
-        width: 200,
+        width: 200,       
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
@@ -107,7 +107,7 @@ export const MobilMenu = ({ handleButtonClick }) => {
   );
 
   return (
-    <Box sx={{ display: { sm: "none", md: "none", lg: "none" }, marginRight: "-2.2vh" }}>
+    <Box sx={{ display: { sm: "none", md: "none", lg: "none" }, margin: "0 -2vh 0 0.8vh" }}>
       <Button onClick={toggleDrawer(true)}>
         <MenuIcon
           sx={{

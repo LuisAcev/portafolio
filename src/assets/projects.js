@@ -9,6 +9,15 @@ export const porjects = [
       " JavaScript, React, Material UI, ReduxTool Kit, RTK, React-Hook-Forms, Yup, React-Router-Dom, React-konva, swiper",
   },
   {
+    title: "Web Editor",
+    img: "https://github.com/LuisAcev/web-editor/blob/main/public/frontPage.png?raw=true",
+    text: "Web Editor",
+    link: "https://luisacev.github.io/web-editor/",
+    repository: "https://github.com/LuisAcev/Journal-app",
+    technologies:
+      " JavaScript, React, React DOM, React Compiler, Material UI, Emotion, Tiptap, Floating UI, Radix UI, react-to-web-component (r2wc), docx, DOMPurify, file-saver, i18next, react-i18next, lodash.throttle, mammoth, pdf.js,Sass, Tesseract.js ",
+  },
+  {
     title: "Journal",
     img: "https://github.com/LuisAcev/Journal-app/blob/main/public/journal.jpg?raw=true",
     text: "journal",
@@ -22,8 +31,7 @@ export const porjects = [
     img: "https://github.com/LuisAcev/Dashboard/blob/main/public/dashboard.jpg?raw=true",
     text: "dashboard",
     link: "https://luisacev.github.io/Dashboard/",
-    repository:
-      "https://github.com/LuisAcev/Dashboard",
+    repository: "https://github.com/LuisAcev/Dashboard",
     technologies: " JavaScript, React, Material UI, React-Router-Dom, swiper",
   },
   {
@@ -37,7 +45,7 @@ export const porjects = [
   },
   {
     title: "Portafolio",
-    img: "https://github.com/LuisAcev/portafolio/blob/main/public/assets/projectPictures/portafolio.jpg?raw=true",
+    img: "https://github.com/LuisAcev/portafolio/blob/main/public/assets/projectPictures/portafolio.png?raw=true",
     text: "portafolio",
     link: "https://luisacev.github.io/portafolio/",
     repository: "https://github.com/LuisAcev/portafolio",
@@ -49,7 +57,8 @@ export const porjects = [
     img: "https://github.com/LuisAcev/CRUD-Users-Management-App-Redux-ToolKit/blob/main/public/crud.jpg?raw=true",
     text: "crud",
     link: "https://luisacev.github.io/CRUD-Users-Management-App-Redux-ToolKit/",
-    repository: "https://github.com/LuisAcev/CRUD-Users-Management-App-Redux-ToolKit",
+    repository:
+      "https://github.com/LuisAcev/CRUD-Users-Management-App-Redux-ToolKit",
     technologies:
       " JavaScript, React, Material UI, ReduxTool Kit, RTK, React-Router-Dom ",
   },

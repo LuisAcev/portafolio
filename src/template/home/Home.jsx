@@ -11,8 +11,8 @@ export const Home = () => {
         height: "100vh",
         width: "100%",
         boxShadow: "inset 0 0 30rem rgba(0, 0, 0, .5)",
-        background:
-          "url(assets/3.jpg) no-repeat top center, linear-gradient(to left, #243B55, #141E30) no-repeat bottom center",
+        // background:
+        //   "url(assets/3.jpg) no-repeat top center, linear-gradient(to left, #243B55, #141E30) no-repeat bottom center",
         backgroundSize: {
           xs: "100% 52%, 100% 50%",
           sm: "100% 54%, 100% 50%",
@@ -49,7 +49,7 @@ export const Home = () => {
             },
             height: { md: "55vh", lg: "85vh" },
             width: { md: "55vh", lg: "85vh" },
-            margin: { md: "6rem 0 0 0.5rem", lg: "10vh 0 0 3rem" },
+            margin: { md: "20vh 0 0 0.5rem", lg: "12vh 0 0 3rem" },
             zIndex: 1,
           }}
         >
@@ -62,10 +62,10 @@ export const Home = () => {
               height: { xs: "60vh", sm: "60vh", md: "68vh", lg: "86vh" },
               padding: "0 0 0 0",
               margin: {
-                xs: "2vh 0 0 -32vh",
-                sm: "7vh 0 0 -36vh",
-                md: "-6vh 0 0 -14rem",
-                lg: "0 0 0 -5rem",
+                xs: "10vh 0 5vh -32vh",
+                sm: "15vh 0 0 -36vh",
+                md: "-2vh 0 0 -14rem",
+                lg: "1vh 0 0 -5rem",
               },
               zIndex: 1,
             }}
@@ -85,28 +85,13 @@ export const Home = () => {
               lg: "flex-end",
             },
             margin: {
-              xs: "7rem 0 0 -5rem",
+              xs: "8rem 0 0 -6vh",
               sm: "6rem 0 0 -4rem",
-              md: "10rem 0 0 -4rem",
-              lg: "10rem 0 0 13rem",
+              md: "22rem 0 0 -5rem",
+              lg: "22rem 0 0 8rem",
             },
           }}
         >
-          <Avatar
-            alt="picture"
-            src="assets/projectPictures/avatar.jpg"
-            sx={{
-              width: { xs: 230, sm: 250, md: 300, lg: 300 },
-              height: { xs: 230, sm: 250, md: 300, lg: 300 },
-              marginBottom: {
-                xs: "0",
-                sm: "0",
-                md: "1.5rem",
-                lg: "1.5rem",
-              },
-              marginLeft: "10rem",
-            }}
-          />
           <Typography
             sx={{
               color: "rgba(241, 234, 234, 0.86)",
@@ -121,23 +106,33 @@ export const Home = () => {
           >
             {t("home.name")}
           </Typography>
-          <div className="typer">
-            <div
-              style={{
-                color: "hsl(192, 33.30%, 97.10%)",
-                marginRight: "1rem",
-              }}
-            >
-              {t(`home.type.IAm`)}
+          <Box
+            sx={{
+              margin: {
+                xs: "0.8vh 0 0 0.5vh",
+                md: "-2rem 0 0 55vh",
+                lg: "-2vh 0 0 4vh",
+              },
+            }}
+          >
+            <div className="typer">
+              <div
+                style={{
+                  color: "hsl(192, 33.30%, 97.10%)",
+                  marginRight:'1vh'
+                }}
+              >
+                {t(`home.type.IAm`)}
+              </div>
+              <Typewriter
+                options={{
+                  strings: [`${t("home.type.1")}`],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </div>
-            <Typewriter
-              options={{
-                strings: [`${t("home.type.1")}`],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
+          </Box>
         </Box>
       </Box>
       {/* /// Button CV /// */}
@@ -145,8 +140,8 @@ export const Home = () => {
         <Button
           href={
             t("home.cv") == "Descargar CV"
-              ? "https://drive.google.com/file/d/1hl9IjqdCKNCqNSamdDgBqBNn4rl0n-wf/view?usp=sharing"
-              : "https://drive.google.com/file/d/1NEN7QkQVX8uh3qO8ICcVHhUlPsEcIKtF/view?usp=sharing"
+              ? "https://drive.google.com/file/d/1sNg0TEB7YhowBn_pDR68clEnA3p2KGfl/view?usp=sharing"
+              : "https://drive.google.com/file/d/1A4x0JrpOFj0H0EIwRbZjNa-1RS2CBHss/view?usp=sharing"
           }
           sx={{
             backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
