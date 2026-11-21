@@ -140,8 +140,8 @@ export const Home = () => {
         <Button
           href={
             t("home.cv") == "Descargar CV"
-              ? "https://drive.google.com/file/d/13XEuTPnX_3nXe0kWzdgI1I4Gdf9k9EAA/view?usp=sharing"
-              : "https://drive.google.com/file/d/14xCe8q0nc_9Y3xh-4xwS4XP55WJRnU49/view?usp=sharing"
+              ? "https://drive.google.com/file/d/1yozfmeKj6vtm13iJVd_oZvXe2VQayXA0/view?usp=sharing"
+              : "https://drive.google.com/file/d/17lgFvLswmuR9m_YPtxl7PdZRIkQKg05u/view?usp=sharing"
           }
           sx={{
             backgroundColor: "hsla(187, 90.30%, 51.40%, 0.3)",
